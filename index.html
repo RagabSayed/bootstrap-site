@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RagabThirdSite</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+    <header class="w-100 fixed-top">
+        <nav class="navbar-content navbar bg-info navbar-expand-sm">
+            <div class="container-fluid d-flex">
+                <figure><img src="./images/logo.png" alt="logo" height="70" width="70" class="navbar-brand rounded-circle"></figure>
+                <a class="navbar-brand nav-link fs-5 fw-bold text-uppercase text-gradient" href="#">tashudu alrahal</a>
+                <button class="navbar-toggler text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon text-dark"><i class="fa-solid fa-sliders"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-6 fw-bold text-uppercase" data-bs-toggle="dropdown" 
+                            href="#">makkah</a>
+                            <ul class="dropdown-menu text-capitalize">
+                                <li><a class="dropdown-item text-primary" href="#">almasjid alharam</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">alsafa w almarwa</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">jabal earafat</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">almuzdalifa</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">ramy aljamarat</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">munaa w jabal alnuwr</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">more ....</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-6 fw-bold text-uppercase" data-bs-toggle="dropdown" 
+                            href="#">AL-Madinah AL-Munawwarah</a>
+                            <ul class="dropdown-menu text-capitalize">
+                                <li><a class="dropdown-item text-primary" href="#">almasjid alnabawiu</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">maqabir albaqie</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">masjid qaba</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">masjid alqiblatayn</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">jabal 'uhud</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">more ....</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle fs-6 fw-bold text-uppercase" data-bs-toggle="dropdown" 
+                            href="#">alquds</a>
+                            <ul class="dropdown-menu text-capitalize">
+                                <li><a class="dropdown-item text-primary" href="#">almasjid al'aqsaa</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">masjid qubat alsakhra</a></li>
+                                <li><hr class="dropdown-driver"></li>
+                                <li><a class="dropdown-item text-primary" href="#">hayit albaraq</a></li>
+                                <li><a class="dropdown-item text-primary" href="#">more ....</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link fs-6 fw-bold text-uppercase" href="#">about us</a></li>
+                    </ul>
+                    <form class="ms-auto ">
+                        <input class="form-control ms-4" type="text" placeholder="Search">
+                    </form>
+                    <button class="btn btn-primary ms-2">Search</button>
+                    <button type="button" class="btn btn-primary ms-3" data-bs-toggle="modal" data-bs-target="#myModal">Login</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /////////////////////////modal///////////////// -->
+    <section>
+        <div class="modal-data modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary">
+                        <h4 class="bg-info p-2 text-muted">Login</h4>
+                        <button type="button" class="btn-close bg-info" data-bs-dismiss="modal"></button>
+                    </div><!-- /modal-header -->
+                    <div class="modal-body">
+                        <form action="/action_page.php">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label text-primary">Email Address</label>
+                                <input type="email" class="form-control border-info" id="email" name="email">
+                                <p class="text-muted">We will never share your E-mail with anyone else.</p>
+                            </div>
+                            <div class="mb-3">
+                                <label for="pwd" class="form-label text-primary">Password</label>
+                                <input type="password" class="form-control border-info" id="pwd" name="pswd">
+                            </div>
+                            <div class="form-check form-switch mb-s">
+                                <label class="form-check-label text-primary">
+                                <input type="checkbox" class="form-check-input" name="remember">Remember Me
+                                </label>
+                            </div>
+                        </form>
+                    </div><!-- /modal body -->
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary me-auto">Submit</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div><!-- /modal-footer -->
+                </div><!-- /modal-content -->
+            </div><!-- /modal-dialog -->
+        </div><!-- /modal -->
+    </section>
+        <!--////////////////////////////////// Aside icon //////////////////////////////////////// -->
+    <section class="container-fluid position-fixed mt-5">
+        <aside>
+            <div class="aside-icon-div text-primary d-flex flex-column justify-content-end">
+                <i class="fa-brands fa-square-facebook h1 text-primary ms-auto m-3 aside-icon"></i>
+                <i class="fa-brands fa-square-whatsapp h1 text-primary ms-auto m-3 aside-icon"></i>
+                <i class="fa-brands fa-square-twitter h1 text-primary ms-auto m-3 aside-icon"></i>
+                <i class="fa-brands fa-linkedin h1 text-primary ms-auto m-3 aside-icon"></i>
+                <i class="fa-brands fa-square-instagram h1 text-primary ms-auto m-3 aside-icon"></i>
+            </div><!-- /aside-icon -->
+        </aside>
+    </section>
+    <!-- ////////////////Main Section //////////////////////// -->
+    <section>
+        <main>
+            <div class="main-div carousel slide" id="demo" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div><!-- /carousel-indicators -->
+                <div class="carousel-inner main-content">
+                    <div class="carousel-item active main-item">
+                        <figure><img src="./images/makkah-03.jpg" alt="makkah" class="d-block w-100 h-100" ></figure>
+                        <div class="carousel-title carousel-caption bg-secondary mb-5">
+                            <h2 class="h2 text-capitalize">makat almukarama</h2>
+                            <p class="h5">A destination for Muslims around the world throughout the year to perform Umrah and at a specific time of the year to perform Hajj.</p>
+                            <button type="button" class="btn btn-primary fs-3 fw-bold">Visit It</button>
+                        </div><!-- /carousel-caption -->
+                    </div><!-- /carousel-item -->
+                    <div class="carousel-item main-item">
+                        <figure><img src="./images/madina-02.jpg" alt="Madinah" class="d-block w-100 h-100" ></figure>
+                        <div class="carousel-title carousel-caption bg-secondary mb-5">
+                            <h2 class="h2 text-capitalize">AL Madinah AL Munawwarah</h2>
+                            <p class="h5">A destination for Muslims around the world throughout the year to visit the grave of the Prophet Muhammad and the graves of his honorable companions</p>
+                            <button type="button" class="btn btn-primary fs-3 fw-bold">Visit It</button>
+                        </div><!-- /carousel-caption -->
+                    </div><!-- /carousel-item -->
+                    <div class="carousel-item main-item">
+                        <figure><img src="./images/alqudas-02.jpg" alt="alquds" class="d-block w-100 h-100"></figure>
+                        <div class="carousel-title carousel-caption bg-secondary mb-5">
+                            <h2 class="h2 text-capitalize">madinat alquds</h2>
+                            <p class="h5">One of the most important holy sites for Muslims. It is the first of the two Qiblahs and the third of the Two Sanctuaries, and it is to it that the Prophet Muhammad made his journey and from there his ascension to heaven</p>
+                            <button type="button" class="btn btn-primary fs-3 fw-bold">Visit It</button>
+                        </div><!-- /carousel-caption -->
+                    </div><!-- /carousel-item -->
+                    <div class="carousel-item main-item">
+                        <figure><img src="./images/cairo-02.jpg" alt="cairo" class="d-block w-100 h-100"></figure>
+                        <div class="carousel-title carousel-caption bg-secondary mb-5">
+                            <h2 class="h2 text-capitalize">madinat alqahira</h2>
+                            <p class="h5">The capital of the Arab Republic of Egypt, it has the Amr ibn al-Aas Mosque, the first mosque built in Africa, and it has the Al-Azhar Mosque, the citadel of Islamic sciences for many centuries.</p>
+                            <button type="button" class="btn btn-primary fs-3 fw-bold">Visit Us</button>
+                        </div><!-- /carousel-caption -->
+                    </div><!-- /carousel-item -->
+                </div><!-- /carousel-inner -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div><!-- /carousel -->
+        </main>
+    </section>
+    <!-- //////////////////welcome section/////////////////// -->
+    <section>
+        <div class="welcome-section bg-info mt-5 p-5">
+            <h2 class="titel fs-3 fw-bold text-uppercase mb-4 text-gradient">welcom</h2>
+            <h4 class="fs-5 mb-4">Are you planning to perform Umrah or Hajj?
+                    We have programs that start from one day and extend for three months. The comprehensive program includes visa, flight reservations, accommodation, and internal transportation, as well as the possibility of preparing special programs that suit everyone’s needs.
+                    We are with you from the time you start thinking until you return to your homeland safely, God willing.</h4>
+            <button class="btn btn-primary text-capitalize fs-6 fw-bold bg-light text-primary text-alighn-center"><a href="#"></a>Feel free to contact us to learn more</a></button>
+        </div>
+    </section>
+    <!-- ////////////popular////////////////// -->
+    <section>
+        <div class="popular my-5 container-fluid">
+            <h2 class="titel fs-2 fw-bold text-uppercase text-center py-5 bg-info rounded">our popular programs</h2>
+            <div id="accordion" id="accordionExample">
+                <div class="accordion-item popular-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed text-uppercase fs-4 fw-bold text-gradient" data-bs-toggle="collapse" 
+                            data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Makkah al-Mukarramah
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fs-5 bg-info bg-opacity-50">
+                             Mecca, is the holiest city for Muslims. It contains the Holy House of God, the qibla of Muslims in every prayer, 
+                            and it is where the Prophet Muhammad was born and sent. Muslims around the world go to it throughout the year to perform Umrah rituals, 
+                            and they go to it during the Hajj season to perform Hajj rituals.
+                        </div>
+                    </div>
+                </div><!-- /////popular-item -->
+                <div class="accordion-item popular-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed text-uppercase fs-4 fw-bold text-gradient" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">AL Madinah AL Munawwarah</button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fs-5 bg-info bg-opacity-50">
+                            Medina, the second holiest city among Muslims, to which the Prophet Muhammad immigrated, and where the Islamic state was founded, 
+                            and from which Islam spread throughout the world. It contains the second of the Two Holy Mosques, the Mosque of the Prophet Muhammad, 
+                            and it contains the grave of the Prophet Muhammad and the graves of his eminent companions.
+                        </div>
+                    </div>
+                </div><!-- /////popular-item -->
+                <div class="accordion-item popular-item">
+                    <div class="accordion-header" id="headingThree">
+                        <button type="button" class="accordion-button collapsed text-uppercase fs-4 fw-bold 4 text-gradient" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">madinat alquds</button>
+                    </div>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body fs-5 bg-info bg-opacity-50">
+                            Jerusalem is the third holiest city for Muslims. It contains Al-Aqsa Mosque, the first of the two qiblahs and the third of the two holy mosques. 
+                            Prayers in it are doubled. It is where the Prophet Muhammad made his journey and from there his ascension to heaven.
+                        </div>
+                    </div>
+                </div><!-- /////popular-item -->
+            </div><!-- ////accordion -->
+        </div><!-- /////popular -->
+    </section>
+<!-- /////////////translate//////////// -->
+    <section>
+        <div class="translate container-fluid">
+            <div class="translate-item bg-info">
+                <h2 class="fs-3 fw-bold text-center bg-primary text-capitalize text-light py-3">translate from arabic to english</h2>
+                <div class="translate-item-body">
+                    <p class="fs-5 fw-bold text-capitalize ms-3">write and translate 
+                        <a class="text-decoration-none " href="#">press here</a></p>
+                    <button id="btn11" type="button" class="btn btn-primary fs-4 ms-3 mb-3" >Copy</button>
+                    <span id="span1"></span>
+                    <div class="form-floating">
+                        <textarea class="form-control h-25" placeholder="Translat:" id="floatingTextarea" ></textarea>
+                        <label for="floatingTextarea">Translat :</label>
+                    </div> 
+                </div><!-- /translate-item-body -->
+            </div><!-- /translate-item -->
+            <div class="translate-item bg-info">
+                <h2 class="fs-3 fw-bold text-center bg-primary text-capitalize text-light py-3">translate from arabic to french</h2>
+                <div class="translate-item-body">
+                    <p class="fs-5 fw-bold text-capitalize ms-3">write and translate 
+                        <a class="text-decoration-none " href="#">press here</a></p>
+                    <button id="btn11" type="button" class="btn btn-primary fs-4 ms-3 mb-3" >Copy</button>
+                    <span id="span1"></span>
+                    <div class="form-floating">
+                        <textarea class="form-control h-25" placeholder="Translat:" id="floatingTextarea" ></textarea>
+                        <label for="floatingTextarea">Translat :</label>
+                    </div> 
+                </div><!-- /translate-item-body -->
+            </div><!-- /translate-item -->
+            <div class="translate-item bg-info">
+                <h2 class="fs-3 fw-bold text-center bg-primary text-capitalize text-light py-3">translate from arabic to german</h2>
+                <div class="translate-item-body">
+                    <p class="fs-5 fw-bold text-capitalize ms-3">write and translate 
+                        <a class="text-decoration-none " href="#">press here</a></p>
+                    <button id="btn11" type="button" class="btn btn-primary fs-4 ms-3 mb-3" >Copy</button>
+                    <span id="span1"></span>
+                    <div class="form-floating">
+                        <textarea class="form-control h-25" placeholder="Translat:" id="floatingTextarea" ></textarea>
+                        <label for="floatingTextarea">Translat :</label>
+                    </div> 
+                </div><!-- /translate-item-body -->
+            </div><!-- /translate-item -->
+        </div><!-- /translate -->
+    </section>
+    <hr class="h-15 bg-primary">
+    <section>
+        <div class="container-fluid mosque-des">
+            <div class="mosque-img">
+                
+            </div><!-- /mosque-img -->
+            <div class="mosque-title bg-info">
+                <h2 class="fs-2 fw-bold text-center text-uppercase py-5 text-gradient">the most important mosques in the Islamic world</h2>
+            </div><!-- /mosque-title -->
+            <div class="mosque-content bg-info row gx-5 justify-content-around">
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/el-harm01.jpg" alt="harm">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">almasjid alharam</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in Mecca, Saudi Arabia</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/el-nabawey01.jpg" alt="nabawey">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">almasjid alnabawiu</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in AL-Madinah AL-Munawwarah, Saudi Arabia</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/Quba01.jpg" alt="Quba">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">masjid Quba</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in AL-Madinah AL-Munawwarah, Saudi Arabia</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/Al-Aqsa01.jpg" alt="Aqsa">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">almasjid alaqsa</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in Jerusalem, the capital of Palestine </p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/alsakhra01.jpg" alt="alsakhra">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">masjid qubat alsakhra</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in Jerusalem, the capital of Palestine </p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/AmrIbnAlAeas01.jpg" alt="AmrIbnAlAeas">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">masjid Amr Ibn Alaeas</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in AL-Fustat, Cairo, Egypt</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/Al-Azhar01.jpg" alt="Azhar">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">aljamie al'azhar</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in Cairo, Egypt</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+                <div class="mosque-item position-relative border col-sm-12 col-lg-6 col-xl-4">
+                    <figure><img class="img-fluid px-2" src="./images/HagiaSophia01.jpg" alt="HagiaSophia">
+                        <figcaption class="px-2">
+                            <h2 class="fs-5 fw-bold text-uppercase py-2 d-inline-block mt-2">masjid aya sufya</h2>
+                            <a class="btn btn-lg btn-primary text-capitalize float-end mt-2" role="button" href="#">know more</a>
+                            <p class="fs-6">Located in Istanbul, Turkiye</p>
+                        </figcaption>
+                    </figure>
+                </div><!-- /mosque-item -->
+            </div><!-- /mosque-content -->
+        </div><!-- /mosque-des -->
+    </section>
+    <!-- //////////////////////////////////// -->
+    <section>
+        <div class="reciter container-fluid">
+            <div class="reciter-bg">
+
+            </div><!-- /reciter-bg -->
+            <div class="reciter-title bg-info">
+                <h2 class="text-uppercase fs-2 fw-bold text-gradient text-center py-4">
+                the most famous reciter of the holy quran</h2>
+            </div>
+            <div class="reciter-content row gx-5 justify-content-around">
+                <div class="reciter-item col-sm-12 col-lg-6 col-xl-4 position-relative">
+                    <div class="reciter-item-bg position-relative">
+                        
+                    </div><!-- /reciter-item1-bg -->
+                    <div class="reciter-item-data position-absolute top-0 start-0 pt-3 ms-5">
+                        <h4 class="fs-4 fw-bold text-light ps-3">All prayers for forgiveness and mercy</h4>
+                        <i class="fa-regular fa-clock fs-4 text-light ps-3 mt-2"></i>
+                        <p class="fs-5 text-light d-inline-block ">Tuesday, May 21, 2024</p>
+                        <p class="p-5"></p>
+                        <p class="p-5"></p>
+                        <figure class="mt-5 ms-5"><img class="rounded-circle border border-3 border-secondary" src="./images/hosary.jpg" alt="hosary" 
+                            height="200" width="150"></figure>
+                        <h4 class="fs-4 fw-bold text-light ps-3">Sheikh: Mahmoud Khalil Al-Hosary</h4>
+                        <p class="fs-5 text-light px-3">A Qur’an reciter, one of the prominent figures in this field</p>
+                    </div><!-- /reciter-item-data -->
+                </div><!-- /reciter-item -->
+                <div class="reciter-item col-sm-12 col-lg-6 col-xl-4 position-relative">
+                    <div class="reciter-item-bg reciter-item1-bg position-relative">
+                            
+                    </div><!-- /reciter-item1-bg -->
+                    <div class="reciter-item-data position-absolute top-0 start-0 pt-3 ms-5">
+                        <h4 class="fs-4 fw-bold text-light ps-3">All prayers for forgiveness and mercy</h4>
+                        <i class="fa-regular fa-clock fs-4 text-light ps-3 mt-2"></i>
+                        <p class="fs-5 text-light d-inline-block ">Tuesday, May 21, 2024</p>
+                        <p class="p-5"></p>
+                        <p class="p-5"></p>
+                        <figure class="mt-5 ms-5"><img class="rounded-circle border border-3 border-secondary" src="./images/menshawy.jpg" alt="menshawy" 
+                            height="200" width="150"></figure>
+                        <h4 class="fs-4 fw-bold text-light ps-3">Sheikh: Muhammad Siddiq Al-Minshawi</h4>
+                        <p class="fs-5 text-light px-3">A Qur’an reciter, one of the prominent figures in this field</p>
+                    </div><!-- /reciter-item-data -->
+                </div><!-- /reciter-item -->
+                <div class="reciter-item col-sm-12 col-lg-6 col-xl-4 position-relative">
+                    <div class="reciter-item-bg reciter-item2-bg position-relative">
+                        
+                    </div><!-- /reciter-item1-bg -->
+                    <div class="reciter-item-data position-absolute top-0 start-0 pt-3 ms-5">
+                        <h4 class="fs-4 fw-bold text-light ps-3">All prayers for forgiveness and mercy</h4>
+                        <i class="fa-regular fa-clock fs-4 text-light ps-3 mt-2"></i>
+                        <p class="fs-5 text-light d-inline-block ">Tuesday, May 21, 2024</p>
+                        <p class="p-5"></p>
+                        <p class="p-5"></p>
+                        <figure class="mt-5 ms-5"><img class="rounded-circle border border-3 border-secondary" src="./images/abd-elbast.jpg" alt="hosary" 
+                            height="200" width="150"></figure>
+                        <h4 class="fs-4 fw-bold text-light ps-3">Sheikh: Abdul Basit Muhammad Abdul Samad</h4>
+                        <p class="fs-5 text-light px-3">A Qur’an reciter, one of the prominent figures in this field</p>
+                    </div><!-- /reciter-item-data -->
+                </div><!-- /reciter-item -->
+            </div><!-- /reciter-content -->
+        </div><!-- /reciter -->
+    </section>
+    <!-- //////////////////////////////////// -->
+    <section>
+        <div class="six-books container-fluid">
+            <h2 class="text-uppercase fs-2 fw-bold text-gradient text-center py-5">Introduction to the six books of Muslims</h2>
+            <div class="six-books-content">
+                <div class="six-books-item row col-lg-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-bold text-capitalize text-primary pt-1 pb-2">sahih albukharii</h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-primary rounded-pill" style="width:130px"></p>
+                        <p>“Al-Jami’ Al-Musnad Al-Sahih, a summary of the affairs of the Messenger of God, may God bless him and grant him peace, 
+                            his Sunnahs and his days,” known as “Sahih Al-Bukhari,” is the most prominent book of the Prophet’s hadith among Muslims of the Sunnis and 
+                            the community. It was compiled by Imam Muhammad bin Ismail al-Bukhari, and it took him sixteen years to edit it. He selected his hadiths 
+                            from six hundred thousand hadiths that he collected. The book occupies an advanced position among the Sunnis, as it is one of the six books 
+                            that are considered among the most important sources of hadith among them, and it is the first book classified in the authentic hadith in 
+                            its abstract form. It is considered to be the most correct book after the Holy Qur’an. The book of Sahih Al-Bukhari is considered one of 
+                            the books of the mosques, which contains all the sections of the hadith, including beliefs, rulings, interpretation, history, asceticism, 
+                            etiquette, and others. <br> <br>
+                            The book gained wide fame during the life of Imam al-Bukhari. It was narrated that more than seventy thousand people heard it from him, 
+                            and its fame extended to contemporary times and it met with great acceptance and interest from scholars. Many books were written around it, 
+                            including explanations, summaries, comments, supplements, extracts, and others related to the sciences of hadith, until some historians 
+                            reported that a number His explanations alone amounted to more than eighty-two explanations.</p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                    <div class="six-books-item-img col-sm-12 col-lg-5 my-4">
+                        <figure><img class="img-fluid w-100" src="./images/SaheehAlBukhari1.png" alt="SaheehAlBukhari1"></figure>
+                    </div>
+                </div><!-- /six-books-item -->
+                <div class="six-books-item row col-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-img col-sm-12 col-lg-5 my-4">
+                        <figure><img class="img-fluid w-100" src="./images/SaheehMuslim.jpg" alt="SahihMuslim"></figure>
+                    </div>
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-bold text-capitalize text-primary pt-1 pb-2">Sahih Muslim</h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-danger rounded-pill" style="width:130px"></p>
+                        <p>Sahih Muslim is one of the most important books of the Prophet’s Hadith among Sunni Muslims, and they consider it the third most 
+                            authentic book of all time after the Holy Qur’an and then Sahih al-Bukhari. The book Sahih Muslim is considered one of the comprehensive books, 
+                            which contains all the chapters of hadith, including beliefs, rulings, etiquette, interpretation, history, virtues, papers, and others. <br> <br>
+                            It was compiled by Abu Al-Hussein Muslim bin Al-Hajjaj Al-Qushayri Al-Naysaburi, and he sought to narrate only the authentic hadiths on 
+                            which the scholars and hadith scholars had unanimously agreed, so he limited himself to narrating the marfoo’ hadiths and avoided narrating 
+                            the mu’allaqat and suspended ones and the sayings of the scholars and their jurisprudential opinions, except for what was rare. 
+                            He spent nearly fifteen years collecting and compiling it, and he compiled it. It contains more than three thousand hadiths without duplicates, 
+                            and he selected them from three hundred thousand hadiths from his archives.</p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                </div><!-- /six-books-item -->
+                <div class="six-books-item row col-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-bold text-capitalize text-primary pt-1 pb-2">Sunan Abu Dawud</h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-primary rounded-pill" style="width:130px"></p>
+                        <p>Sunan Abu Dawud, known as Al-Sunan, is one of the six books of hadith and the four Sunnahs, which occupies an advanced position among the Sunnis. 
+                                It is considered one of the most important sources of hadith among them. Where it comes in rank after the two Sahihs, it was classified by 
+                                Imam Abu Dawud Suleiman bin Al-Ash’ath bin Ishaq bin Bashir bin Shaddad bin Amr Al-Azdi Al-Sijistani (202 AH - 817 AD / 275 AH - 888 AD), 
+                                in which Abu Dawud collected a number of hadiths, and his hadiths amounted to 5274 hadiths. He selected it from five hundred thousand hadiths.
+                                <br>
+                                Abu Dawud was interested in the hadiths of the rulings that the jurists used as evidence, and on which the Egyptian scholars based the jurisprudential rulings, 
+                                as he said in his letter to the people of Mecca: <strong>“These hadiths are all the hadiths of the Sunnah regarding rulings, but as for many hadiths 
+                                regarding asceticism and virtues, and other than this, I did not narrate them.”</strong> , and he has He divided his book into 36 books, divided each 
+                                book into 1871 chapters, and translated each hadith according to what the scholars had deduced from it. The book contains hadiths attributed to 
+                                the Prophet Muhammad, as well as hadiths attributed to the Companions, and traces attributed to the scholars of the Successors.
+                                <br>    
+                                As for the grading of hadiths, he used to point out extremely weak hadiths, but as for the authentic and good hadiths, he remained silent about them, 
+                                as he said: <strong>“I mentioned the authentic ones and what is similar and close to them, and whatever was very weak I explained, 
+                                and whatever I did not mention anything in it is valid, and some of them are more authentic than others.”</strong>  », 
+                                Hadith scholars differed regarding the hadiths that are silent about them. Ibn al-Salah, Yahya bin Sharaf al-Nawawi, and Ibn Katheer al-Dimashqi 
+                                see that they are good if they are not in the two Sahihs, and others see that they vary between authentic and good, and some of them are weak and 
+                                valid for consideration.</p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                    <div class="six-books-item-img col-sm-12 col-lg-5 mt-5">
+                        <figure><img class="img-fluid w-100" src="./images/SunanAbuDawud.jpg" alt="SunanAbuDawud"></figure>
+                    </div>
+                </div><!-- /six-books-item -->
+                <div class="six-books-item row col-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-img col-sm-12 col-lg-5 mt-5">
+                        <figure><img class="w-100" src="./images/SunanAlNisaee.jpg" alt="SunanAlNisaee"></figure>
+                    </div>
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-bold text-capitalize text-primary pt-1 pb-2">Sunan al-Nasa’i</h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-success rounded-pill" style="width:130px"></p>
+                        <p>Al-Sunan al-Sughra, known as Sunan al-Nasa’i, is one of the six books of hadith compiled by Ahmad bin Shuaib al-Nasa’i, 
+                            who died in the year 303 AH in the city of Ramla in Palestine. Some Sunni scholars consider it the third of the six books in terms of authenticity.</p>
+                        <h4 class="fs-4 fw-bold">Introducing Al-Nasa’i</h4>
+                        <p>Al-Nasa'i is named after Nasa in Khorasan. He heard from several sheikhs, the most famous of whom are: Ishaq bin Rahawayh and Abu Dawud al-Sijistani. 
+                            Al-Dhahabi said regarding his right to biographies of noble figures: “No one in the history of 300 had a better memory than Al-Nasa’i. He is more skilled in hadith, 
+                            its reasons, and its narrators than Muslim, Abu Dawud, and Abu Isa. He is a neighbor at Al-Bukhari and Abu Zara’a track.” Among his works are: the book 
+                            'Al-Mujtaba from Al-Sunan Al-Kubra', which is famous for 'Sunan Al-Nasa'i', 'Al-Sunan Al-Kubra', 'The Weak and the Abandoned', and 'The Work of the Day and 
+                            the Night' in which he mentioned the dhikrs.</p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                </div><!-- /six-books-item -->
+                <div class="six-books-item row col-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-img col-sm-12 col-lg-4 mt-5">
+                        <figure><img class="img-fluid w-100" src="./images/SunanAltirmithi.jpg" alt="SunanAltirmithi"></figure>
+                    </div>
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-blod text-capitalize text-primary pt-1 pb-2">Jami' al-Tirmidhi</h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-primary rounded-pill" style="width:130px"></p>
+                        <p>Jami' al-Tirmidhi, known as Sunan al-Tirmidhi, is one of the six books of hadith compiled by Imam al-Tirmidhi. 
+                            Sunni scholars consider it the fifth of the six books of hadith.
+                            <br> The title of the book Jami’ al-Tirmidhi is: “The brief collection of Sunnahs on the authority of the Messenger of God, may God bless him and grant him peace, 
+                            and knowledge of what is correct, what is wrong, and what is to be done.” <br>
+                            Al-Tirmidhi said about this book: <strong>“I compiled this book and presented it to the scholars of Hijaz, Iraq, and Khorasan, and they approved of it. 
+                                Whoever has this book in his house, it is as if there is a prophet speaking in his house.”</strong>  Judge Abu Bakr Ibn Al-Arabi said in 
+                                'Aridah Al-Ahwadhi Sharh Sunan Al-Tirmidhi': <strong>“There is nothing in them like the book of Abu Issa, the sweetness of a syllable, the freshness of its purity, 
+                                and the sweetness of a lawgiver. It contains fourteen knowledge, and that is closer to work and safer: chain of transmission, authentication, weakness, 
+                                and number of paths.” And wound, and just, and sublime, and conceal, and connect, and cut off, and make clear what is done, and what is abandoned, 
+                                and he explained the difference of scholars in rejecting and accepting its effects, and mentioned their difference in its interpretation, 
+                                and each of these sciences is fundamental in its chapter, and is unique in its context, so the reader of it is still in Beautiful gardens 
+                                and consistent sciences, and this is something that can only be pervaded by abundant knowledge, abundant success, leisure and management.”</strong>
+                        </p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                </div><!-- /six-books-item -->
+                <div class="six-books-item row col-10 mx-auto rounded-5 my-5">
+                    <div class="six-books-item-text p-2 col-sm-12 col-lg-7 bg-info my-4">
+                        <h2 class="fs-2 fw-blod text-capitalize text-primary pt-1 pb-2"></h2>
+                        <i class="fa-solid fa-calendar-days fs-3"></i>
+                        <span class="fs-5">Tuesday, May 21, 2024</span>
+                        <p class="line-after py-1 mt-3 bg-primary rounded-pill" style="width:130px"></p>
+                        <p>Sunan Ibn Majah is one of the books of the Prophet’s hadiths, and it is the sixth of the six books that are the foundations of 
+                            the honorable Sunnah of the Prophet, by its author, Ibn Majah, Abu Abdullah Muhammad bin Yazid al-Qazwini. His author’s name is his father Yazid, 
+                            and he is one of the most venerable, greatest, and most enduring of his books over time, and by which he is known and famous. 
+                            He arranged the hadiths according to Books and chapters, and scholars disagreed about its status among the books of the Sunnah. 
+                            And the Sunnahs of Ibn Majah include: the authentic, the good, the weak, and even the objectionable and the fabricated ones, 
+                            although they are few. Whatever the case, the fabricated hadiths are few in comparison to the total number of hadiths in the book, 
+                            which are more than 4,000 hadiths. He died in the year 273 AH.</p>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-tag fs-4 pe-2"></i>Podcast</button>
+                        <button class="btn btn-secondary"><i class="fa-regular fa-clock fs-4 pe-2"></i>55 mins</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-play fs-4 pe-2 text-primary"></i></i>Play Episode</button>
+                    </div><!-- /six-books-item-text -->
+                    <div class="six-books-item-img col-sm-12 col-lg-4 mt-5">
+                        <figure><img class="img-fluid w-100" src="./images/SIbnmaja.jpg" alt="SunanIbnMaja"></figure>
+                    </div>
+                </div><!-- /six-books-item -->
+            </div><!-- /six-books-content -->
+        </div><!-- /six-books -->
+    </section>
+    <!-- ///////////////////////////////// -->
+    <section>
+        <div class="joinus container-fluid bg-info pb-3">
+            <h2 class="text-uppercase fs-2 fw-bold text-gradient text-center py-5">join us</h2>
+            <div class="joinus-content row gx-5 justify-content-around">
+                <div class="joinus-item bg-light text-center col-sm-12 col-lg-6 col-xl-3">
+                    <p class="text-info fs-4">Subscribe Now</p>
+                    <i class="join-icon bg-info fa-brands fa-square-twitter"></i>
+                    <a class="text-info fs-4 text-decoration-none d-block" href="#">Go to link</a>
+                </div><!-- /joinus-item -->
+                <div class="joinus-item bg-light text-center col-sm-12 col-lg-6 col-xl-3">
+                    <p class="text-info fs-4">Follow</p>
+                    <i class="join-icon bg-success fa-brands fa-square-whatsapp m-3"></i>
+                    <a class="text-info fs-4 text-decoration-none d-block" href="#">Go to link</a>
+                </div><!-- /joinus-item -->
+                <div class="joinus-item bg-light text-center col-sm-12 col-lg-6 col-xl-3">
+                    <p class="text-info fs-4">Like the page</p>
+                    <i class="join-icon bg-info fa-brands fa-linkedin m-3"></i>
+                    <a class="text-info fs-4 text-decoration-none d-block" href="#">Go to link</a>
+                </div><!-- /joinus-item -->
+                <div class="joinus-item bg-light text-center col-sm-12 col-lg-6 col-xl-3">
+                    <p class="text-info fs-4">Watch Vedios</p>
+                    <i class="join-icon bg-danger fa-brands fa-square-instagram m-3"></i>
+                    <a class="text-info fs-4 text-decoration-none d-block" href="#">Go to link</a>
+                </div><!-- /joinus-item -->
+            </div><!-- /joinus-content -->
+        </div><!-- /joinus -->
+    </section>
+    <!-- /////////////////////////////////// -->
+    <footer>
+        <div class="footer-content container-fluid mt-2 bg-info row mx-auto">
+            <div class="footer-item col-sm-12 col-lg-6 col-xl-4 pb-4">
+                <div class="footer-item-title text-center">
+                    <h2 class="py-3 border-bottom border-3"></h2>
+                    <figure><img src="./images/logo.png" alt="logo" height="150" width="150" class="rounded-circle d-inline-block">
+                    <a class="fs-4 fw-bold text-uppercase text-light text-decoration-none" href="#">tashudu alrahal</a>
+                    </figure>
+                    <h2 class="py-1 border-top border-3"></h2>
+                </div><!-- /footer-item-title -->
+                <div class="footer-item-data text-center">
+                    <p class="text-light">Tel : 000-000-000</p>
+                    <p class="text-light">Address : Cairo, EGYPT</p>
+                    <p class="text-light">Fax : 000-000-000</p>
+                </div><!-- /footer-item-data -->
+            </div><!-- /footer-item -->
+            <div class="footer-item col-sm-12 col-lg-6 col-xl-4 pb-4">
+                <div class="footer-item-title text-center">
+                    <h2 class="py-3 border-bottom border-3"></h2>
+                    <figure><img src="./images/logo.png" alt="logo" height="150" width="150" 
+                        class="rounded-circle d-inline-block">
+                    <p class="fs-4 fw-bold text-light d-inline-block">Important Links</p>
+                    </figure>
+                    <h2 class="py-1 border-top border-3"></h2>
+                </div><!-- /footer-item-title -->
+                <div class="footer-item-data text-center">
+                    <a class="text-link text-dark text-decoration-none d-block py-2" href="#">Visit Us</a>
+                    <a class="text-link text-dark text-decoration-none d-block py-2" href="#">Take Alook</a>
+                    <a class="text-link text-dark text-decoration-none d-block py-2" href="#">Your health is more important</a>
+                </div><!-- /footer-item-data -->
+            </div><!-- /footer-item -->
+            <div class="footer-item col-sm-12 col-lg-6 col-xl-4 pb-4">
+                <div class="footer-item-title text-center">
+                    <h2 class="py-3 border-bottom border-3"></h2>
+                    <figure><img src="./images/logo.png" alt="logo" height="150" width="150" 
+                        class="rounded-circle d-inline-block">
+                        <p class="fs-4 fw-bold text-light d-inline-block">Vision</p>
+                    </figure>
+                    <h2 class="py-1 border-top border-3"></h2>
+                </div><!-- /footer-item-title -->
+                <div class="footer-item-data text-center">
+                    <p class="text-light">Serveices for all</p>
+                    <p class="text-light">Provide best serveices</p>
+                    <p class="text-light">You will be better than before</p>
+                </div><!-- /footer-item-data -->
+            </div><!-- /footer-item -->
+            <h2 class="py-1 border-top border-3"></h2>
+            <h2 class="text-uppercase fs-4 fw-bold text-gradient text-center py-3">copyright<span>&copy;</span>
+                2024 ragabsayed.tashudu alrahal company.all rights reserved</h2>
+                <h2 class="py-1 border-top border-3"></h2>
+                <div class="py-4"></div>
+        </div>
+        
+    </footer>
+
+
+
+    <script src="./js/script.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script> -->
+    
+</body>
+</html>
